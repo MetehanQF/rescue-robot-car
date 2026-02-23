@@ -1,1 +1,1 @@
-CAD models, 3D prints and mechanical assemblies..
+CAD models, 3D prints and mechanical assemblies.
