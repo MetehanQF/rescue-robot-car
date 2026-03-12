@@ -26,7 +26,6 @@ Connector: XT60
 Usage: Powering motor drivers and DC-DC converters for robot electronics.
 
 Components:
-
 - 6x Samsung 25R 18650 cells
 - 3S 40A BMS
 - XT60 connector
