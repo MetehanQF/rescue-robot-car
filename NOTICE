@@ -1,0 +1,62 @@
+Third-party and generated code in this repository
+=================================================
+
+The MIT licence in LICENSE covers the work written for this project: the ESP32
+sketches, the STM32 application logic, the documentation and the hardware
+notes.
+
+It does NOT cover the vendored and tool-generated files described below. Those
+carry their own copyright headers, those headers are unmodified, and their
+upstream terms apply. Nothing here relicenses them.
+
+
+1. STMicroelectronics STM32Cube HAL / LL drivers
+------------------------------------------------
+Path:      firmware/stm32/Drivers/STM32F4xx_HAL_Driver/
+Copyright: STMicroelectronics
+Licence:   see firmware/stm32/Drivers/STM32F4xx_HAL_Driver/LICENSE.txt
+Source:    https://github.com/STMicroelectronics/STM32CubeF4
+
+Redistributed unmodified as generated into the project by STM32CubeMX.
+
+
+2. ARM CMSIS Core
+------------------
+Path:      firmware/stm32/Drivers/CMSIS/Include/
+Copyright: ARM Limited
+Licence:   Apache License 2.0 — see firmware/stm32/Drivers/CMSIS/LICENSE.txt
+Source:    https://github.com/ARM-software/CMSIS_5
+
+
+3. STMicroelectronics CMSIS device files for STM32F4xx
+-------------------------------------------------------
+Path:      firmware/stm32/Drivers/CMSIS/Device/ST/STM32F4xx/
+Copyright: STMicroelectronics
+Licence:   see firmware/stm32/Drivers/CMSIS/Device/ST/STM32F4xx/LICENSE.txt
+
+
+4. STM32CubeMX generated application scaffolding
+-------------------------------------------------
+Path:      firmware/stm32/Core/          (partially)
+           firmware/stm32/Core/Startup/startup_stm32f407vgtx.s
+           firmware/stm32/Controller_Motor.ioc
+Copyright: STMicroelectronics, for the generated portions
+
+These files are a mixture. The peripheral initialisation functions, the
+interrupt vector table, the system clock configuration and the startup assembly
+are produced by STM32CubeMX and carry ST copyright headers.
+
+The application logic written for this project sits between the
+
+    /* USER CODE BEGIN ... */
+    /* USER CODE END ... */
+
+markers, which STM32CubeMX preserves across regeneration. Only those sections
+are covered by the MIT licence in LICENSE.
+
+
+Trademarks
+----------
+STM32 and STM32Cube are trademarks of STMicroelectronics. Arm and CMSIS are
+trademarks of Arm Limited. ESP32 is a trademark of Espressif Systems. This
+project is not affiliated with, authorised by, or endorsed by any of them.

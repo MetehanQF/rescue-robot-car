@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────
+# 1. DEVICE-SPECIFIC CONFIGURATION
+#    config.h carries the controller's Bluetooth MAC, which identifies one
+#    physical board. Copy config.example.h and keep yours out of git.
+# ─────────────────────────────────────────────
+config.h
+firmware/esp32/**/config.h
+!firmware/esp32/config.example.h
+*.local.h
+secrets.h
+
+# ─────────────────────────────────────────────
+# 2. BUILD ARTIFACTS
+# ─────────────────────────────────────────────
+# STM32CubeIDE
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.su
+*.d
+*.o
+*.a
+.settings/
+.cproject
+.project
+*.launch
+
+# Arduino / PlatformIO
+build/
+.pio/
+.pioenvs/
+.piolibdeps/
+*.ino.cpp
+
+# ─────────────────────────────────────────────
+# 3. CAD / MECHANICAL WORKING FILES
+#    Export STLs and STEPs deliberately; do not commit autosaves.
+# ─────────────────────────────────────────────
+*.f3d~
+*.FCStd1
+*.blend[0-9]
+*.bak
+*.autosave
+
+# ─────────────────────────────────────────────
+# 4. EDITOR / OS
+# ─────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.tmp
+*.orig
